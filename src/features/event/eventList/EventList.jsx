@@ -8,9 +8,7 @@ class EventList extends Component {
       <div>
         {events.map((event) =>
            <EventListItem key={event.id} event={event} />
-        )}
-        
-        
+        )}                
       </div>
     )
   }
