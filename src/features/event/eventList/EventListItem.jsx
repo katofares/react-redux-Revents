@@ -28,7 +28,8 @@ class EventListItem extends Component {
               </Segment>
               <Segment secondary>
                 <List horizontal>
-                  {event.attendees.map( attendee => (
+                {/* anything after && will return if the statement before && is true */}
+                  { event.attendees &&  event.attendees.map( attendee => (
                     <EventListAttendee key={attendee.id} attendee={attendee} />
                   ))}
               
