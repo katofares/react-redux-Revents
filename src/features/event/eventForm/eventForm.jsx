@@ -22,7 +22,7 @@ class EventForm extends Component {
    */
   // 01- lifecycle
   componentDidMount(){
-    if(this.props.s electedEvent !== null){
+    if(this.props.selectedEvent !== null){
       this.setState({
         event: this.props.selectedEvent
       })
